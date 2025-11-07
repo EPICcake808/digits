@@ -4,7 +4,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 // import StuffItem from '@/components/StuffItem';
 import { loggedInProtectedPage } from '@/lib/page-protection';
 import authOptions from '@/lib/authOptions';
-import { Contact } from '@/lib/validationSchemas';
+// import { Contact } from '@/lib/validationSchemas';
 import ContactCard from '@/components/ContactCard';
 import { prisma } from '@/lib/prisma';
 
@@ -25,7 +25,7 @@ const ListPage = async () => {
   */
 
   const owner = session?.user!.email ? session.user.email : '';
-  const contacts: Contact[] = await prisma.contact.findMany({
+  const contacts = await prisma.contact.findMany({
     where: { owner },
   });
 
