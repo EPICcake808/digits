@@ -7,7 +7,9 @@ import NoteItem from './NoteItem';
 import AddNoteForm from './AddNoteForm';
 
 /* Renders a single row in the List Stuff table. See list/page.tsx. */
-const ContactCardAdmin = ({ contact, notes }: { contact: Contact, notes: Note[] }) => (
+// Disable require-default-props for this typed component (we use TypeScript defaults)
+// eslint-disable-next-line react/require-default-props
+const ContactCardAdmin = ({ contact, notes = [] }: { contact: Contact; notes?: Note[] }) => (
   <Card className="h-100">
     <Card.Header>
       <Image src={contact.image} width={75} />
@@ -21,7 +23,9 @@ const ContactCardAdmin = ({ contact, notes }: { contact: Contact, notes: Note[] 
     <Card.Body>
       <Card.Text>{contact.description}</Card.Text>
       <ListGroup variant="flush">
-        {notes.map((note) => <NoteItem key={note.id} note={note} />)}
+        {(notes || []).map((note) => (
+          <NoteItem key={note.id} note={note} />
+        ))}
       </ListGroup>
       <AddNoteForm contact={contact} />
       <p className="blockquote-footer">{contact.owner}</p>
