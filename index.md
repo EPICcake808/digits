@@ -235,7 +235,7 @@ app/
 
 ### Application functionality
 
-The application implements a simple CRUD application for managing "Contacts", which is a PostgreSQL table consisting of a name (String), a quantity (Number), a condition (one of 'excellent', 'good', 'fair', or 'poor') and an owner.
+The application implements a simple CRUD application for managing "Contacts", which is a PostgreSQL table consisting of a first name (String), a last name (String), an address (String), an image (String), a description (String), and an owner.
 
 By default, each user only sees the Contacts that they have created. However, the settings file enables you to define default accounts. If you define a user with the role "admin", then that user gets access to a special page which lists all the Contacts defined by all users.
 
