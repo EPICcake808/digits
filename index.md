@@ -1,4 +1,4 @@
-![](https://github.com/ics-software-engineering/nextjs-application-template/raw/main/doc/landing-page.png)
+![](https://raw.githubusercontent.com/EPICcake808/digits/cleanup/doc/landing-page.png)
 
 nextjs-application-template is a sample Next.js 14 application that illustrates:
 
@@ -243,7 +243,7 @@ By default, each user only sees the Contacts that they have created. However, th
 
 When you retrieve the app at http://localhost:3000, this is what should be displayed:
 
-![](<img src="doc/digitslanding.png">)
+![](https://raw.githubusercontent.com/EPICcake808/digits/cleanup/doc/digitslanding.png)
 
 The next step is to use the Login menu to either Login to an existing account or register a new account.
 
@@ -251,19 +251,19 @@ The next step is to use the Login menu to either Login to an existing account or
 
 Clicking on the Login link, then on the Sign In menu item displays this page:
 
-![](<img src="doc/digitslogin.png">)
+![](https://raw.githubusercontent.com/EPICcake808/digits/cleanup/doc/digitslogin.png)
 
 #### Register page
 
 Alternatively, clicking on the Login link, then on the Sign Up menu item displays this page:
 
-![](<img src="doc/digitssignup.png">)
+![](https://raw.githubusercontent.com/EPICcake808/digits/cleanup/doc/digitssignup.png)
 
 #### Landing (after Login) page, non-Admin user
 
 Once you log in (either to an existing account or by creating a new one), the navbar changes as follows:
 
-![](<img src="doc/digitshome.png">)
+![](https://raw.githubusercontent.com/EPICcake808/digits/cleanup/doc/digitshome.png)
 
 You can now add new Contacts documents, and list the Contacts you have created. Note you cannot see any Contacts created by other users.
 
@@ -271,13 +271,13 @@ You can now add new Contacts documents, and list the Contacts you have created. 
 
 After logging in, here is the page that allows you to add new Contacts:
 
-![](<img src="doc/digitsadd.png">)
+![](https://raw.githubusercontent.com/EPICcake808/digits/cleanup/doc/digitsadd.png)
 
 #### List Contacts page
 
 After logging in, here is the page that allows you to list all the Contacts you have created:
 
-![](<img src="doc/digitslist.png">)
+![](https://raw.githubusercontent.com/EPICcake808/digits/cleanup/doc/digitslist.png)
 
 You click the "Edit" link to go to the Edit Contacts page, shown next.
 
@@ -287,19 +287,19 @@ You can add timestamped notes from this page.
 
 After clicking on the "Edit" link associated with an item, this page displays that allows you to change and save it:
 
-![](<img src="doc/digitsedit.png">)
+![](https://raw.githubusercontent.com/EPICcake808/digits/cleanup/doc/digitsedit.png)
 
 #### Landing (after Login), Admin user
 
 You can define an "admin" user in the settings.json file. This user, after logging in, gets a special entry in the navbar:
 
-![](<img src="doc/digitsadming.png">)
+![](https://raw.githubusercontent.com/EPICcake808/digits/cleanup/doc/digitsadming.png)
 
 #### Admin page (list all users contacts)
 
 To provide a simple example of a "super power" for Admin users, the Admin page lists all of the Contacts by all of the users:
 
-![](<img src="doc/digitsadminpage.png">)
+![](https://raw.githubusercontent.com/EPICcake808/digits/cleanup/doc/digitsadminpage.png)
 
 Note that non-admin users cannot get to this page, even if they type in the URL by hand.
 
